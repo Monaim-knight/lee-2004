@@ -1,4 +1,52 @@
-.Rproj.user
+# R
 .Rhistory
+.Rapp.history
 .RData
 .Ruserdata
+*.Rproj.user
+*.Rproj
+.Rprofile
+
+# renv
+renv/library/
+renv/python/
+renv/staging/
+renv/.gitignore
+renv/activate.R
+renv/settings.json
+
+# Data (keep structure, ignore large files)
+data/raw/*.dta
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.rds
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Outputs
+outputs/**/*
+!outputs/tables/.gitkeep
+!outputs/figures/.gitkeep
+
+# Reports (compiled)
+reports/*.html
+reports/*.pdf
+!reports/paper.md
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large PDFs (keep structure)
+*.pdf
+!reports/slides.pdf
+.Rproj.user
